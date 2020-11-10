@@ -1,19 +1,22 @@
 {
-    "name": "networkedeventobserver",
+    "name": "networked-bindable-observer",
     "version": "1.0.0",
     "description": "Extension of EventObserver to enable relaying events over a network",
     "main": "./lib/NetworkedEventObserver.js",
     "scripts": {
-        "test": "tap"
+        "test": "tap -C",
+        "test-color": "tap"
     },
     "author": "Logan Gerber",
     "license": "MIT",
     "dependencies": {
-        "bindable-observer": "^1.0.2"
+        "bindable-observer": "^6.0.1",
+        "ws": "^7.3.1"
     },
     "devDependencies": {
         "@types/node": "14.0.27",
         "@types/tap": "14.10.0",
+        "@types/ws": "^7.2.6",
         "tap": "14.10.8"
     },
     "homepage": "https://github.com/LoganGerber/NetworkedBindableObserver",
@@ -27,7 +30,6 @@
     ],
     "readme": "README.md",
     "tap": {
-        "color": false,
         "coverage-map": "./coveragemap.js"
     }
 }
